@@ -3,7 +3,10 @@ import os
 from setuptools import find_packages, setup
 
 
-INSTALL_REQUIRES = ["PyJWT>2.0.0"]
+INSTALL_REQUIRES = [
+    "PyJWT>2.0.0",
+    "cryptography"
+]
 
 
 with open(os.path.join(os.path.dirname(__file__), "README.rst")) as readme:
